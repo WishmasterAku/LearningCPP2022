@@ -1,6 +1,7 @@
 #include <iostream>
 
 //void Log(const char* message);
+void Message(const int message);
 
 // Operations
 int Multiply(int a, int b)
@@ -23,24 +24,25 @@ int Substraction(int a, int b)
 void MultiplyAndLog(int a, int b)
 {
 	int result = Multiply(a, b);
-	std::cout << result << std::endl;
+	//std::cout << result << std::endl;
+	Message(result);
 }
 
 void DivisionAndLog(int a, int b)
 {
 	int result = Division(a, b);
-	std::cout << result << std::endl;
+	Message(result);
 }
 void AdditionAndLog(int a, int b)
 {
 	int result = Addition(a, b);
-	std::cout << result << std::endl;
+	Message(result);
 }
 
 void SubtractionAndLog(int a, int b)
 {
 	int result = Substraction(a, b);
-	std::cout << result << std::endl;
+	Message(result);
 }
 int main()
 {
