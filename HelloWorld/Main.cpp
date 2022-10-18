@@ -1,0 +1,71 @@
+#include <iostream>
+
+//void Log(const char* message);
+
+// Operations
+int Multiply(int a, int b)
+{
+	return a * b;
+}
+int Division(int a, int b)
+{
+	return a / b;
+}
+int Addition(int a, int b)
+{
+	return a + b;
+}
+int Substraction(int a, int b)
+{
+	return a - b;
+}
+// Functions
+void MultiplyAndLog(int a, int b)
+{
+	int result = Multiply(a, b);
+	std::cout << result << std::endl;
+}
+
+void DivisionAndLog(int a, int b)
+{
+	int result = Division(a, b);
+	std::cout << result << std::endl;
+}
+void AdditionAndLog(int a, int b)
+{
+	int result = Addition(a, b);
+	std::cout << result << std::endl;
+}
+
+void SubtractionAndLog(int a, int b)
+{
+	int result = Substraction(a, b);
+	std::cout << result << std::endl;
+}
+int main()
+{
+	//int variable = 8; // -2b - 2b || INT 4 Bytes || 1 byte is 8 bits ( 4bytes = 32 bits )
+	// 32 bits, one bit is signed for positive or negative. 2^31 = 2b
+	// unsigned in front of int = always positive 2^32 = 4b
+	// char is 1 bit, short is 2 bit, int is 4, long is 4, long long is 8
+	// char used for mainly characters
+	// char a = 'A';
+	// float, double for decimal 
+	// float variable = 5.5f;
+	// float 4 bytes of data ex: 5.5
+	// double var == 5.2;
+	// bool variable = true or false
+	// bool is 1 bit of memory
+	// sizeof(int) display size memory
+	// pointers bool*
+	// references bool&
+
+	// int result = Multiply(5, 6);
+	MultiplyAndLog(4, 6);
+	MultiplyAndLog(3, 9);
+	MultiplyAndLog(2, 8); 
+	DivisionAndLog(10, 2);
+	AdditionAndLog(100, 250);
+	SubtractionAndLog(100, 75);
+	std::cin.get();
+}
