@@ -18,6 +18,10 @@ int Substraction(int a, int b)
 {
 	return a - b;
 }
+int VolumeCalc(int l, int w, int h)
+{
+	return l * w * h;
+}
 // Functions
 void MultiplyAndLog(int a, int b)
 {
@@ -25,7 +29,6 @@ void MultiplyAndLog(int a, int b)
 	//std::cout << result << std::endl;
 	Message(result);
 }
-
 void DivisionAndLog(int a, int b)
 {
 	int result = Division(a, b);
@@ -36,12 +39,18 @@ void AdditionAndLog(int a, int b)
 	int result = Addition(a, b);
 	Message(result);
 }
-
 void SubtractionAndLog(int a, int b)
 {
 	int result = Substraction(a, b);
 	Message(result);
 }
+void VolCal(int l, int w, int h)
+{
+	int result = VolumeCalc(l, w, h);
+	Message(result);
+}
+
+// Main
 int main()
 {
 	//int variable = 8; // -2b - 2b || INT 4 Bytes || 1 byte is 8 bits ( 4bytes = 32 bits )
@@ -61,12 +70,13 @@ int main()
 	// references bool&
 
 	// int result = Multiply(5, 6);
+	
+
 	MultiplyAndLog(4, 6);
-	MultiplyAndLog(3, 9);
-	MultiplyAndLog(2, 8); 
 	DivisionAndLog(10, 2);
 	AdditionAndLog(100, 250);
 	SubtractionAndLog(100, 75);
+	VolCal(2, 5, 7);
 	Log("Test Passed");
 	std::cin.get();
 }
