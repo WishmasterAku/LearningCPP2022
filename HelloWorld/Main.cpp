@@ -1,7 +1,5 @@
 #include <iostream>
-
-//void Log(const char* message);
-void Message(const int message);
+#include "Log.h"
 
 // Operations
 int Multiply(int a, int b)
@@ -69,5 +67,6 @@ int main()
 	DivisionAndLog(10, 2);
 	AdditionAndLog(100, 250);
 	SubtractionAndLog(100, 75);
+	Log("Test Passed");
 	std::cin.get();
 }
