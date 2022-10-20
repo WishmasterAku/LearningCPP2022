@@ -78,5 +78,17 @@ int main()
 	SubtractionAndLog(100, 75);
 	VolCal(2, 5, 7);
 	Log("Test Passed");
+
+	int x = 5;
+	//bool comparsionResult = x == 5; // if x equals to 5 its true
+	if (x == 6)
+	{
+		Log("Hello World");
+	}
+	else
+	{
+		Log("Failed");
+	}
+	
 	std::cin.get();
 }
