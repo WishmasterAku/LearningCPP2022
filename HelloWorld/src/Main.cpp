@@ -54,6 +54,22 @@ void Increment(int& value)
 	value++;
 }
 
+// Classes
+
+class Player
+{
+public:
+	int x, y;
+	int speed;
+
+	void Move(int xa, int ya)
+	{
+		x = +xa * speed;
+		y = +ya * speed;
+	}
+};
+
+
 // Main
 int main()
 {
@@ -166,6 +182,8 @@ int main()
 
 	Message(age);
 
+	Player player;
+	player.Move(1, 2);
 
 	std::cin.get();
 }
