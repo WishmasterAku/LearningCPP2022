@@ -89,6 +89,21 @@ int main()
 	{
 		Log("Failed");
 	}
+
+	int age = 21;
+	if (age >= 21)
+	{
+		Log("You're old enough to enter and drink");
+	}
+	else if (age >= 18 && age < 21)
+	{
+		Log("You're old enough to enter but not old enough to drink");
+	}
+	else
+	{
+		Log("You're too young to enter and drink");
+	}
+
 	
 	std::cin.get();
 }
