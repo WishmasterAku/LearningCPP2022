@@ -49,6 +49,10 @@ void VolCal(int l, int w, int h)
 	int result = VolumeCalc(l, w, h);
 	Message(result);
 }
+void Increment(int& value)
+{
+	value++;
+}
 
 // Main
 int main()
@@ -71,7 +75,7 @@ int main()
 
 	// int result = Multiply(5, 6);
 	
-
+	/*
 	MultiplyAndLog(4, 6);
 	DivisionAndLog(10, 2);
 	AdditionAndLog(100, 250);
@@ -118,7 +122,7 @@ int main()
 		Message(i);
 	}
 	
-	/*
+	
 	Log("========================================");
 
 	int z = 0;
@@ -148,6 +152,19 @@ int main()
 	memset(buffer, 0, 8);
 
 	delete[] buffer;
+
+	//References is a existing reference of a variable
+
+	int a = 5;
+	Increment(a);
+	int& ref = a;
+
+	Message(a);
+
+	int age = 39;
+	Increment(age);
+
+	Message(age);
 
 
 	std::cin.get();
