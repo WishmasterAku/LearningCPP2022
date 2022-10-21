@@ -110,11 +110,15 @@ int main()
 
 	Log("========================================");
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 10; i++)
 	{
+		if (i % 2 == 0)
+			continue;
 		Log("Hello Wishmaster");
+		Message(i);
 	}
 	
+	/*
 	Log("========================================");
 
 	int z = 0;
@@ -130,6 +134,21 @@ int main()
 			Log("Hello World");
 			y++;
 		} while (y < 5);
+		*/
+	Log("========================================");
+	// Pointers is a interger which stores memory address
+
+	int var = 8;
+
+	int* ptr = &var; // & front of variable is getting memory address and assigning to ptr. 0 = NULL
+	*ptr = 10;//dereferencing the data, meaning accessing the data
+	Message(var);
+
+	char* buffer /*creating a ptr */ = new char[8]; // allocate 8 bytes and putting it to the beginning of memory
+	memset(buffer, 0, 8);
+
+	delete[] buffer;
+
 
 	std::cin.get();
 }
