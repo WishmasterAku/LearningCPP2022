@@ -79,6 +79,8 @@ int main()
 	VolCal(2, 5, 7);
 	Log("Test Passed");
 
+	Log("========================================");
+
 	int x = 5;
 	//bool comparsionResult = x == 5; // if x equals to 5 its true
 	if (x == 6)
@@ -89,6 +91,8 @@ int main()
 	{
 		Log("Failed");
 	}
+
+	Log("========================================");
 
 	int age = 21;
 	if (age >= 21)
@@ -104,6 +108,28 @@ int main()
 		Log("You're too young to enter and drink");
 	}
 
+	Log("========================================");
+
+	for (int i = 0; i < 5; i++)
+	{
+		Log("Hello Wishmaster");
+	}
 	
+	Log("========================================");
+
+	int z = 0;
+		while (z < 5)
+		{
+			Log("Hello World");
+			z++;
+		}
+	Log("========================================");
+		int y = 0;
+		do
+		{
+			Log("Hello World");
+			y++;
+		} while (y < 5);
+
 	std::cin.get();
 }
