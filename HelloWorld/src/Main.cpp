@@ -185,5 +185,7 @@ int main()
 	Player player;
 	player.Move(1, 2);
 
+	//Testing clone repo from personal laptop
+
 	std::cin.get();
 }
